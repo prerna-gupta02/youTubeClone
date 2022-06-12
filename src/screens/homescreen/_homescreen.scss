@@ -1,0 +1,12 @@
+@import '../../_index.scss';
+
+.homescreen{
+    padding: 0 70px !important;
+    // height: 90vh;
+    overflow-y: scroll;
+}
+@media (max-width: $breakpoint-small) {
+    .homescreen{
+        padding: 0 30px !important;
+    }
+}

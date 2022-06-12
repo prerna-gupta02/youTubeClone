@@ -1,0 +1,66 @@
+@import '../../_index.scss';
+
+.video{
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    &__top{
+        margin-bottom: 0.5rem;
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+
+        &__duration{
+            position: absolute;
+            bottom: 0.3rem;
+            right: 0.3rem;
+            padding: 0.2rem;
+            background: #080808ec;
+            border-radius: 3px;
+        }
+        
+        .lazy-load-image-background{
+            width: 100%;
+        }
+    }
+
+    &__title{
+        margin-bottom: 0.1rem;
+        display: flex;
+
+        img{
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            cursor: pointer;
+            align-self: center;
+        }
+
+        p{
+            font-size: 1.05rem;
+            line-height: 1.2rem;
+            font-weight: 500;
+            align-self: center;
+            margin-bottom: 0;
+            @include line-clamp(2)
+        }
+    }
+
+    &__details{
+        display: flex;
+        margin-left: 36px;
+        padding-left: 0.5rem;
+    }
+
+    &__channel{
+        margin-left: 36px;
+        padding-left: 0.5rem;
+    }
+}
